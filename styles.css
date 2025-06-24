@@ -1,0 +1,41 @@
+:root {
+    /*color from style-guide*/
+    --color-yellow: hsl(47, 88%, 63%);
+    --color-white: hsl(0, 0, 100%);
+    --color-gray-500: hsl(0, 0, 42%);
+    --color-gray-900: hsl(0, 0, 7%);
+
+    /*effects*/
+    --box-shadow: 0.5rem 0.5rem 0 0 var(--color-gray-900);
+
+    /*typography*/
+    --font-family:'Figtree', sans-serif;
+    --font-weight-medium: 500;
+    --font-weight-extrabold: 800;
+}
+
+/*reset standart styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
+    font-weight: 300 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-yellow);
+    min-height: 100vh;
+    padding: 1.5rem;
+    display: grid;
+    place-items: center;
+    line-height: 1.5;
+
+}
