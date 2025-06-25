@@ -135,3 +135,26 @@ body {
 .attribution a {
     color: var(--color-gray-500);
 }
+
+/*mobile-responsive styles with media queries*/
+@media (max-width: 375px) {
+    .card {
+        max-width: 327px;
+    }
+    
+    .card__tag {
+        font-size: 12px;
+    }
+    
+    .card__date {
+        font-size: 12px;
+    }
+    
+    .card__title {
+        font-size: 20px;
+    }
+    
+    .card__description {
+        font-size: 14px;
+    }
+}
