@@ -1,26 +1,25 @@
 :root {
-    /*color from style-guide*/
+    /*Colors*/
     --color-yellow: hsl(47, 88%, 63%);
-    --color-white: hsl(0, 0, 100%);
-    --color-gray-500: hsl(0, 0, 42%);
-    --color-gray-900: hsl(0, 0, 7%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-gray-500: hsl(0, 0%, 42%);
+    --color-gray-900: hsl(0, 0%, 7%);
 
-    /*effects*/
+    /*Effects*/
     --box-shadow: 0.5rem 0.5rem 0 0 var(--color-gray-900);
 
-    /*typography*/
-    --font-family:'Figtree', sans-serif;
+    /*Typographia*/
+    --font-family: 'Figtree', sans-serif;
     --font-weight-medium: 500;
     --font-weight-extrabold: 800;
 }
 
-/*reset standart styles*/
+/* Reset*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 @font-face {
     font-family: 'Figtree';
     src: url(assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
@@ -30,12 +29,109 @@
 }
 
 body {
-    font-family: var(--font-family);
     background-color: var(--color-yellow);
+    font-family: var(--font-family);
     min-height: 100vh;
-    padding: 1.5rem;
-    display: grid;
-    place-items: center;
-    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
 
+.card {
+    background-color: var(--color-white);
+    padding: 23px;
+    border-radius: 20px;
+    border: 1px solid var(--color-gray-900);
+    box-shadow: var(--box-shadow);
+    max-width: 384px;   
+}
+
+.card__image-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card__image {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__content {
+    margin-top: 24px;
+}
+
+.card__tag {
+    display: inline-block;
+    background-color: var(--color-yellow);
+    color: var(--color-gray-900);
+    font-weight: var(--font-weight-extrabold);
+    font-size: 14px;
+    line-height: 150%;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.card__date {
+    display: block;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: var(--font-weight-medium);
+    margin-top: 12px;
+}
+
+.card__title {
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: var(--font-weight-extrabold);
+    color: var(--color-gray-900);
+    margin-top: 12px;
+}
+
+.card__title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card__description {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-500);
+    margin-top: 12px;
+}
+
+/* Автор */
+.card__author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.card__avatar {
+    width: 32px;
+    height: 32px;
+}
+
+.author__name {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: var(--font-weight-extrabold);
+    color: var(--color-gray-900);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.attribution a {
+    color: var(--color-gray-500);
 }
