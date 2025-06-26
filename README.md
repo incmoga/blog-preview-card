@@ -16,7 +16,7 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 ### Screenshot
-| Mobile | Desktop |
+| Desktop (1440px) | Mobile (375px) |
 |----------------|------------------|
 | <img src="assets/screenshots/screenshot-desktop.png" width="1440"> | <img src="assets/screenshots/screenshot-mobile.png" width="375"> |
 ### Links
